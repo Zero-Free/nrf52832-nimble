@@ -1,0 +1,50 @@
+Import('rtconfig')
+from building import *
+
+cwd = GetCurrentDir()
+
+path = [cwd,
+    cwd + '/cmsis/include',
+    cwd + '/nrfx',
+    cwd + '/nrfx/drivers',
+    cwd + '/nrfx/drivers/include',
+    cwd + '/nrfx/drivers/src/prs',
+    cwd + '/nrfx/hal',
+    cwd + '/nrfx/mdk',
+    cwd + '/nrfx/soc',
+    cwd + '/nrfx/templates']
+
+src = Split('''
+    nrfx/mdk/arm_startup_nrf52.s
+    nrfx/mdk/system_nrf52.c
+
+    nrfx/drivers/src/prs/nrfx_prs.c
+    nrfx/drivers/src/nrfx_adc.c
+    nrfx/drivers/src/nrfx_clock.c
+    nrfx/drivers/src/nrfx_gpiote.c
+    nrfx/drivers/src/nrfx_nfct.c
+    nrfx/drivers/src/nrfx_power.c
+    nrfx/drivers/src/nrfx_ppi.c
+    nrfx/drivers/src/nrfx_pwm.c
+    nrfx/drivers/src/nrfx_qdec.c
+    nrfx/drivers/src/nrfx_rtc.c
+    nrfx/drivers/src/nrfx_saadc.c
+    nrfx/drivers/src/nrfx_spi.c
+    nrfx/drivers/src/nrfx_spim.c
+    nrfx/drivers/src/nrfx_spis.c
+    nrfx/drivers/src/nrfx_systick.c
+    nrfx/drivers/src/nrfx_timer.c
+    nrfx/drivers/src/nrfx_twi.c
+    nrfx/drivers/src/nrfx_twim.c
+    nrfx/drivers/src/nrfx_uart.c
+    nrfx/drivers/src/nrfx_uarte.c
+    nrfx/drivers/src/nrfx_usbd.c
+    nrfx/drivers/src/nrfx_wdt.c
+
+    nrfx/templates/nrfx_glue.c''')
+
+CPPDEFINES = ['NRF52832_XXAA']
+
+group = DefineGroup('nordic', src, depend = [''], CPPPATH = path, CPPDEFINES = CPPDEFINES)
+
+Return('group')
