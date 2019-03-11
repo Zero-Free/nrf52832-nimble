@@ -120,3 +120,10 @@ void rt_hw_board_init(void)
 #endif
 }
 
+static int reboot(void)
+{
+    rt_hw_cpu_reset();
+
+    return 0;
+}
+MSH_CMD_EXPORT_ALIAS(reboot, reboot, "reset system");
