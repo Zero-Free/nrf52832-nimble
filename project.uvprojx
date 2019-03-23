@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
+
   <SchemaVersion>2.1</SchemaVersion>
+
   <Header>### uVision Project, (C) Keil Software</Header>
+
   <Targets>
     <Target>
       <TargetName>rtthread</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>nRF52832_xxAA</Device>
@@ -14,28 +18,28 @@
           <PackID>NordicSemiconductor.nRF_DeviceFamilyPack.8.16.0</PackID>
           <PackURL>http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/</PackURL>
           <Cpu>IRAM(0x20000000,0x10000) IROM(0x00000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
-          <FlashUtilSpec />
-          <StartupFile />
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile></StartupFile>
           <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC4000 -FN2 -FF0nrf52xxx -FS00 -FL0200000 -FF1nrf52xxx_uicr -FS110001000 -FL11000 -FP0($$Device:nRF52832_xxAA$Flash\nrf52xxx.flm) -FP1($$Device:nRF52832_xxAA$Flash\nrf52xxx_uicr.flm))</FlashDriverDll>
           <DeviceId>0</DeviceId>
           <RegisterFile>$$Device:nRF52832_xxAA$Device\Include\nrf.h</RegisterFile>
-          <MemoryEnv />
-          <Cmp />
-          <Asm />
-          <Linker />
-          <OHString />
-          <InfinionOptionDll />
-          <SLE66CMisc />
-          <SLE66AMisc />
-          <SLE66LinkerMisc />
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>$$Device:nRF52832_xxAA$SVD\nrf52.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
-          <BinPath />
-          <IncludePath />
-          <LibPath />
-          <RegisterFilePath />
-          <DBRegisterFilePath />
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath></RegisterFilePath>
+          <DBRegisterFilePath></DBRegisterFilePath>
           <TargetStatus>
             <Error>0</Error>
             <ExitCodeStop>0</ExitCodeStop>
@@ -57,8 +61,8 @@
           <BeforeCompile>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name />
-            <UserProg2Name />
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopU1X>0</nStopU1X>
@@ -67,8 +71,8 @@
           <BeforeMake>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name />
-            <UserProg2Name />
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopB1X>0</nStopB1X>
@@ -78,14 +82,14 @@
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
             <UserProg1Name>fromelf --bin !L --output rtthread.bin</UserProg1Name>
-            <UserProg2Name />
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopA1X>0</nStopA1X>
             <nStopA2X>0</nStopA2X>
           </AfterMake>
           <SelectedForBatchBuild>0</SelectedForBatchBuild>
-          <SVCSIdString />
+          <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
           <UseCPPCompiler>0</UseCPPCompiler>
@@ -99,8 +103,8 @@
           <AssembleAssemblyFile>0</AssembleAssemblyFile>
           <PublicsOnly>0</PublicsOnly>
           <StopOnExitCode>3</StopOnExitCode>
-          <CustomArgument />
-          <IncludeLibraryModules />
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
           <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
@@ -134,10 +138,10 @@
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
-          <Flash4 />
-          <pFcarmOut />
-          <pFcarmGrp />
-          <pFcArmRoot />
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
           <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
@@ -170,7 +174,7 @@
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M4"</AdsCpuType>
-            <RvctDeviceName />
+            <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
@@ -302,7 +306,7 @@
                 <Size>0x0</Size>
               </OCR_RVCT10>
             </OnChipMemories>
-            <RvctStartVector />
+            <RvctStartVector></RvctStartVector>
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
@@ -330,8 +334,8 @@
             <VariousControls>
               <MiscControls>--reduce_paths --gnu</MiscControls>
               <Define>RT_USING_ARM_LIBC, NIMBLE_CFG_CONTROLLER=1, NRF52832_XXAA</Define>
-              <Undefine />
-              <IncludePath>applications;.;drivers;nordic;nordic\cmsis\include;nordic\nrfx;nordic\nrfx\drivers;nordic\nrfx\drivers\include;nordic\nrfx\drivers\src\prs;nordic\nrfx\hal;nordic\nrfx\mdk;nordic\nrfx\soc;nordic\nrfx\templates;packages\NimBLE-latest;packages\NimBLE-latest\nimble\include;packages\NimBLE-latest\nimble\host\include;packages\NimBLE-latest\nimble\host\src;packages\NimBLE-latest\nimble\host\services\ans\include;packages\NimBLE-latest\nimble\host\services\bas\include;packages\NimBLE-latest\nimble\host\services\bleuart\include;packages\NimBLE-latest\nimble\host\services\gap\include;packages\NimBLE-latest\nimble\host\services\gatt\include;packages\NimBLE-latest\nimble\host\services\ias\include;packages\NimBLE-latest\nimble\host\services\lls\include;packages\NimBLE-latest\nimble\host\services\tps\include;packages\NimBLE-latest\nimble\host\store\ram\include;packages\NimBLE-latest\nimble\host\util\include;packages\NimBLE-latest\porting\nimble\include;packages\NimBLE-latest\porting\npl\rtthread\include;packages\NimBLE-latest\ext\tinycrypt\include;packages\NimBLE-latest\nimble\transport\ram\include;packages\NimBLE-latest\nimble\controller\include;packages\NimBLE-latest\nimble\drivers\nrf52\include;packages\NimBLE-latest\apps\blehr\src;..\..\..\rt_code\rt-thread\include;..\..\..\rt_code\rt-thread\libcpu\arm\cortex-m4;..\..\..\rt_code\rt-thread\libcpu\arm\common;..\..\..\rt_code\rt-thread\components\dfs\include;..\..\..\rt_code\rt-thread\components\dfs\filesystems\devfs;..\..\..\rt_code\rt-thread\components\drivers\include;..\..\..\rt_code\rt-thread\components\drivers\include;..\..\..\rt_code\rt-thread\components\drivers\include;..\..\..\rt_code\rt-thread\components\finsh;..\..\..\rt_code\rt-thread\components\libc\compilers\armlibc;..\..\..\rt_code\rt-thread\components\libc\compilers\common</IncludePath>
+              <Undefine></Undefine>
+              <IncludePath>.;rt-thread\include;applications;.;drivers;nordic;nordic\cmsis\include;nordic\nrfx;nordic\nrfx\drivers;nordic\nrfx\drivers\include;nordic\nrfx\drivers\src\prs;nordic\nrfx\hal;nordic\nrfx\mdk;nordic\nrfx\soc;nordic\nrfx\templates;packages\NimBLE-latest;packages\NimBLE-latest\nimble\include;packages\NimBLE-latest\nimble\host\include;packages\NimBLE-latest\nimble\host\src;packages\NimBLE-latest\nimble\host\services\ans\include;packages\NimBLE-latest\nimble\host\services\bas\include;packages\NimBLE-latest\nimble\host\services\bleuart\include;packages\NimBLE-latest\nimble\host\services\gap\include;packages\NimBLE-latest\nimble\host\services\gatt\include;packages\NimBLE-latest\nimble\host\services\ias\include;packages\NimBLE-latest\nimble\host\services\lls\include;packages\NimBLE-latest\nimble\host\services\tps\include;packages\NimBLE-latest\nimble\host\store\ram\include;packages\NimBLE-latest\nimble\host\util\include;packages\NimBLE-latest\porting\nimble\include;packages\NimBLE-latest\porting\npl\rtthread\include;packages\NimBLE-latest\ext\tinycrypt\include;packages\NimBLE-latest\nimble\transport\ram\include;packages\NimBLE-latest\nimble\controller\include;packages\NimBLE-latest\nimble\drivers\nrf52\include;packages\NimBLE-latest\apps\blehr\src;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m4;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;rt-thread\components\libc\compilers\common</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -348,8 +352,8 @@
             <VariousControls>
               <MiscControls>--cpreproc_opts=-DBLE_STACK_SUPPORT_REQD,-DNRF_SD_BLE_API_VERSION=4,-DS132,-DSOFTDEVICE_PRESENT,-DSWI_DISABLE0,-DCONFIG_GPIO_AS_PINRESET,-DNRF52,-DNRF52832_XXAA,-DNRF52_PAN_12,-DNRF52_PAN_15,-DNRF52_PAN_20,-DNRF52_PAN_31,-DNRF52_PAN_36,-DNRF52_PAN_51,-DNRF52_PAN_54,-DNRF52_PAN_55,-DNRF52_PAN_58,-DNRF52_PAN_64,-DNRF52_PAN_74</MiscControls>
               <Define>BLE_STACK_SUPPORT_REQD NRF_SD_BLE_API_VERSION=4 S132 SOFTDEVICE_PRESENT SWI_DISABLE0 CONFIG_GPIO_AS_PINRESET NRF52 NRF52832_XXAA NRF52_PAN_12 NRF52_PAN_15 NRF52_PAN_20 NRF52_PAN_31 NRF52_PAN_36 NRF52_PAN_51 NRF52_PAN_54 NRF52_PAN_55 NRF52_PAN_58 NRF52_PAN_64 NRF52_PAN_74</Define>
-              <Undefine />
-              <IncludePath />
+              <Undefine></Undefine>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -361,17 +365,97 @@
             <useFile>0</useFile>
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
-            <pXoBase />
-            <ScatterFile />
-            <IncludeLibs />
-            <IncludeLibsPath />
+            <pXoBase></pXoBase>
+            <ScatterFile></ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
             <Misc> --keep *.o(.rti_fn.*)   --keep *.o(FSymTab) --keep *.o(VSymTab) </Misc>
-            <LinkerInputFile />
-            <DisabledWarnings />
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings></DisabledWarnings>
           </LDads>
         </TargetArmAds>
       </TargetOption>
       <Groups>
+        <Group>
+          <GroupName>Kernel</GroupName>
+          <Files>
+            <File>
+              <FileName>clock.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\clock.c</FilePath>
+            </File>
+            <File>
+              <FileName>components.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\components.c</FilePath>
+            </File>
+            <File>
+              <FileName>cpu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\cpu.c</FilePath>
+            </File>
+            <File>
+              <FileName>device.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\device.c</FilePath>
+            </File>
+            <File>
+              <FileName>idle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\idle.c</FilePath>
+            </File>
+            <File>
+              <FileName>ipc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\ipc.c</FilePath>
+            </File>
+            <File>
+              <FileName>irq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\irq.c</FilePath>
+            </File>
+            <File>
+              <FileName>kservice.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\kservice.c</FilePath>
+            </File>
+            <File>
+              <FileName>mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>mempool.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\mempool.c</FilePath>
+            </File>
+            <File>
+              <FileName>object.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\object.c</FilePath>
+            </File>
+            <File>
+              <FileName>scheduler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\scheduler.c</FilePath>
+            </File>
+            <File>
+              <FileName>signal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\signal.c</FilePath>
+            </File>
+            <File>
+              <FileName>thread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\thread.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\src\timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
         <Group>
           <GroupName>Applications</GroupName>
           <Files>
@@ -390,8 +474,11 @@
               <FileType>1</FileType>
               <FilePath>drivers\board.c</FilePath>
             </File>
-          </Files>
-          <Files>
+            <File>
+              <FileName>drv_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>drivers\drv_gpio.c</FilePath>
+            </File>
             <File>
               <FileName>drv_uart.c</FileName>
               <FileType>1</FileType>
@@ -407,169 +494,121 @@
               <FileType>2</FileType>
               <FilePath>nordic\nrfx\mdk\arm_startup_nrf52.s</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>system_nrf52.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\mdk\system_nrf52.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_prs.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\prs\nrfx_prs.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_adc.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_adc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_clock.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_clock.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_gpiote.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_gpiote.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_nfct.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_nfct.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_power.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_power.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_ppi.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_ppi.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_pwm.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_pwm.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_qdec.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_qdec.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_rtc.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_rtc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_saadc.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_saadc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_spi.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_spim.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_spim.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_spis.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_spis.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_systick.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_systick.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_timer.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_twi.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_twi.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_twim.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_twim.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_uart.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_uarte.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_uarte.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_usbd.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_usbd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_wdt.c</FileName>
               <FileType>1</FileType>
               <FilePath>nordic\nrfx\drivers\src\nrfx_wdt.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nrfx_glue.c</FileName>
               <FileType>1</FileType>
@@ -579,792 +618,569 @@
         </Group>
         <Group>
           <GroupName>nimble</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>1</IncludeInBuild>
+              <AlwaysBuild>0</AlwaysBuild>
+              <GenerateAssemblyFile>0</GenerateAssemblyFile>
+              <AssembleAssemblyFile>0</AssembleAssemblyFile>
+              <PublicsOnly>0</PublicsOnly>
+              <StopOnExitCode>3</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+              <ComprImg>0</ComprImg>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>0</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <uC99>2</uC99>
+                <useXO>2</useXO>
+                <v6Lang>0</v6Lang>
+                <v6LangP>0</v6LangP>
+                <vShortEn>2</vShortEn>
+                <vShortWch>2</vShortWch>
+                <v6Lto>2</v6Lto>
+                <v6WtE>2</v6WtE>
+                <v6Rtti>2</v6Rtti>
+                <VariousControls>
+                  <MiscControls> --gnu --diag_suppress=111</MiscControls>
+                  <Define> </Define>
+                  <Undefine> </Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <useXO>2</useXO>
+                <uClangAs>2</uClangAs>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
           <Files>
             <File>
               <FileName>ble_att.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_att.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_att_clt.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_att_clt.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_att_cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_att_cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_att_svr.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_att_svr.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_eddystone.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_eddystone.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_gap.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_gap.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_gattc.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_gattc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_gatts.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_gatts.c</FilePath>
             </File>
-          </Files>
-          <Files>
+            <File>
+              <FileName>ble_gatts_lcl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\NimBLE-latest\nimble\host\src\ble_gatts_lcl.c</FilePath>
+            </File>
             <File>
               <FileName>ble_hs_adv.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_adv.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_atomic.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_atomic.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_cfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_cfg.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_conn.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_conn.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_dbg.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_dbg.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_flow.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_flow.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_hci.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_hci.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_hci_cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_hci_cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_hci_evt.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_hci_evt.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_hci_util.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_hci_util.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_id.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_id.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_log.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_log.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_mbuf.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_mbuf.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_mqueue.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_mqueue.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_misc.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_misc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_pvcy.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_pvcy.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_startup.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_startup.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hs_stop.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_hs_stop.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ibeacon.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_ibeacon.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_l2cap.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_l2cap.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_l2cap_coc.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_l2cap_coc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_l2cap_sig.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_l2cap_sig.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_l2cap_sig_cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_l2cap_sig_cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_monitor.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_monitor.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_sm_alg.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_sm_alg.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_sm.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_sm.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_sm_cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_sm_cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_sm_lgcy.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_sm_lgcy.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_sm_sc.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_sm_sc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_store.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_store.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_store_util.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_store_util.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_uuid.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\src\ble_uuid.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_svc_ans.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\ans\src\ble_svc_ans.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_svc_bas.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\bas\src\ble_svc_bas.c</FilePath>
             </File>
-          </Files>
-          <Files>
+            <File>
+              <FileName>ble_svc_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\NimBLE-latest\nimble\host\services\bleuart\src\ble_svc_uart.c</FilePath>
+            </File>
             <File>
               <FileName>ble_svc_gap.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\gap\src\ble_svc_gap.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_svc_gatt.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\gatt\src\ble_svc_gatt.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_svc_ias.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\ias\src\ble_svc_ias.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_svc_lls.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\lls\src\ble_svc_lls.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_svc_tps.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\services\tps\src\ble_svc_tps.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_store_ram.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\store\ram\src\ble_store_ram.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>addr.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\host\util\src\addr.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_util.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\src\ble_util.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nimble_port.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\nimble_port.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>endian.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\endian.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
-              <FileName>mem.c</FileName>
+              <FileName>src_mem.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\mem.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>os_mbuf.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\os_mbuf.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>os_mempool.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\os_mempool.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>os_msys_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\os_msys_init.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>modlog.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\npl\rtthread\src\modlog.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>nimble_port_rtthread.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\npl\rtthread\src\nimble_port_rtthread.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>npl_os_rtthread.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\npl\rtthread\src\npl_os_rtthread.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
-              <FileName>nrf5x_isr.c</FileName>
+              <FileName>npl_shell.c</FileName>
               <FileType>1</FileType>
-              <FilePath>packages\NimBLE-latest\porting\npl\rtthread\src\nrf5x_isr.c</FilePath>
+              <FilePath>packages\NimBLE-latest\porting\npl\rtthread\src\npl_shell.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>aes_decrypt.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\aes_decrypt.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>aes_encrypt.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\aes_encrypt.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>cmac_mode.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\cmac_mode.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ecc.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\ecc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ecc_dh.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\ecc_dh.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>utils.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\utils.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hci_ram.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\transport\ram\src\ble_hci_ram.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_sched.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_sched.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_xcvr.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_xcvr.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_whitelist.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_whitelist.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_ctrl.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_ctrl.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_hci.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_hci.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_supp_cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_supp_cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_adv.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_adv.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_conn.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_conn.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_resolv.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_resolv.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_conn_hci.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_conn_hci.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_rand.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_rand.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_scan.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_scan.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_dtm.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_dtm.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_ll_hci_ev.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_hci_ev.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_hw.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\drivers\nrf52\src\ble_hw.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ble_phy.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\drivers\nrf52\src\ble_phy.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>os_cputime.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\os_cputime.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>os_cputime_pwr2.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\os_cputime_pwr2.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>hal_timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\porting\nimble\src\hal_timer.c</FilePath>
             </File>
-          </Files>
-          <Files>
+            <File>
+              <FileName>nrf5x_isr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\NimBLE-latest\porting\npl\rtthread\src\nrf5x_isr.c</FilePath>
+            </File>
             <File>
               <FileName>blehr.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\apps\blehr\src\blehr.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>gatt_svr.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\apps\blehr\src\gatt_svr.c</FilePath>
             </File>
           </Files>
-          <GroupOption>
-            <GroupArmAds>
-              <Cads>
-                <VariousControls>
-                  <MiscControls> --gnu --diag_suppress=111</MiscControls>
-                  <Define> </Define>
-                  <Undefine> </Undefine>
-                  <IncludePath> </IncludePath>
-                </VariousControls>
-              </Cads>
-            </GroupArmAds>
-          </GroupOption>
         </Group>
         <Group>
-          <GroupName>Kernel</GroupName>
-          <Files>
-            <File>
-              <FileName>clock.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\clock.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>components.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\components.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>cpu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\cpu.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>device.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\device.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>idle.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\idle.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>ipc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\ipc.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>irq.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\irq.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>kservice.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\kservice.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>src_mem.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\mem.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>mempool.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\mempool.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>object.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\object.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>scheduler.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\scheduler.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>signal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\signal.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>thread.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\thread.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>timer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\src\timer.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>CORTEX-M4</GroupName>
-          <Files>
-            <File>
-              <FileName>cpuport.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\libcpu\arm\cortex-m4\cpuport.c</FilePath>
-            </File>
-          </Files>
-          <Files>
-            <File>
-              <FileName>context_rvds.S</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\libcpu\arm\cortex-m4\context_rvds.S</FilePath>
-            </File>
-          </Files>
+          <GroupName>cpu</GroupName>
           <Files>
             <File>
               <FileName>backtrace.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\libcpu\arm\common\backtrace.c</FilePath>
+              <FilePath>rt-thread\libcpu\arm\common\backtrace.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>div0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\libcpu\arm\common\div0.c</FilePath>
+              <FilePath>rt-thread\libcpu\arm\common\div0.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>showmem.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\libcpu\arm\common\showmem.c</FilePath>
+              <FilePath>rt-thread\libcpu\arm\common\showmem.c</FilePath>
+            </File>
+            <File>
+              <FileName>cpuport.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>rt-thread\libcpu\arm\cortex-m4\cpuport.c</FilePath>
+            </File>
+            <File>
+              <FileName>context_rvds.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>rt-thread\libcpu\arm\cortex-m4\context_rvds.S</FilePath>
             </File>
           </Files>
         </Group>
@@ -1374,49 +1190,37 @@
             <File>
               <FileName>dfs.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\src\dfs.c</FilePath>
+              <FilePath>rt-thread\components\dfs\src\dfs.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>dfs_file.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\src\dfs_file.c</FilePath>
+              <FilePath>rt-thread\components\dfs\src\dfs_file.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>dfs_fs.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\src\dfs_fs.c</FilePath>
+              <FilePath>rt-thread\components\dfs\src\dfs_fs.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>dfs_posix.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\src\dfs_posix.c</FilePath>
+              <FilePath>rt-thread\components\dfs\src\dfs_posix.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>poll.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\src\poll.c</FilePath>
+              <FilePath>rt-thread\components\dfs\src\poll.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>select.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\src\select.c</FilePath>
+              <FilePath>rt-thread\components\dfs\src\select.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>devfs.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\dfs\filesystems\devfs\devfs.c</FilePath>
+              <FilePath>rt-thread\components\dfs\filesystems\devfs\devfs.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1426,63 +1230,47 @@
             <File>
               <FileName>pin.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\misc\pin.c</FilePath>
+              <FilePath>rt-thread\components\drivers\misc\pin.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>serial.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\serial\serial.c</FilePath>
+              <FilePath>rt-thread\components\drivers\serial\serial.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>completion.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\completion.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\completion.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>dataqueue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\dataqueue.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\dataqueue.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>pipe.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\pipe.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\pipe.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ringblk_buf.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\ringblk_buf.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\ringblk_buf.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>ringbuffer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\ringbuffer.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\ringbuffer.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>waitqueue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\waitqueue.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\waitqueue.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>workqueue.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\drivers\src\workqueue.c</FilePath>
+              <FilePath>rt-thread\components\drivers\src\workqueue.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1492,112 +1280,82 @@
             <File>
               <FileName>shell.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\shell.c</FilePath>
+              <FilePath>rt-thread\components\finsh\shell.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>symbol.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\symbol.c</FilePath>
+              <FilePath>rt-thread\components\finsh\symbol.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>cmd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\cmd.c</FilePath>
+              <FilePath>rt-thread\components\finsh\cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>msh.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\msh.c</FilePath>
+              <FilePath>rt-thread\components\finsh\msh.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>msh_cmd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\msh_cmd.c</FilePath>
+              <FilePath>rt-thread\components\finsh\msh_cmd.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>msh_file.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\msh_file.c</FilePath>
+              <FilePath>rt-thread\components\finsh\msh_file.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_compiler.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_compiler.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_compiler.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_error.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_error.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_error.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_heap.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_heap.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_heap.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_init.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_init.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_init.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_node.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_node.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_node.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_ops.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_ops.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_ops.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_parser.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_parser.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_parser.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_var.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_var.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_var.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_vm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_vm.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_vm.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>finsh_token.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\finsh\finsh_token.c</FilePath>
+              <FilePath>rt-thread\components\finsh\finsh_token.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1607,51 +1365,43 @@
             <File>
               <FileName>libc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\libc\compilers\armlibc\libc.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\libc.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>mem_std.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\libc\compilers\armlibc\mem_std.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\mem_std.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>stdio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\libc\compilers\armlibc\stdio.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\stdio.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>stubs.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\libc\compilers\armlibc\stubs.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\stubs.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>time.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\libc\compilers\armlibc\time.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\armlibc\time.c</FilePath>
             </File>
-          </Files>
-          <Files>
             <File>
               <FileName>gmtime_r.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\rt_code\rt-thread\components\libc\compilers\common\gmtime_r.c</FilePath>
+              <FilePath>rt-thread\components\libc\compilers\common\gmtime_r.c</FilePath>
             </File>
           </Files>
         </Group>
       </Groups>
     </Target>
   </Targets>
+
   <RTE>
-    <apis />
-    <components />
-    <files />
+    <apis/>
+    <components/>
+    <files/>
   </RTE>
+
 </Project>
