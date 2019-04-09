@@ -11,6 +11,7 @@
 
 #include "drv_gpio.h"
 #include "nrf.h"
+#include "nrf_gpio.h"
 
 #define MCU_GPIO_USE_PORT_EVENT 1
 

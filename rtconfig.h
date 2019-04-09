@@ -141,7 +141,7 @@
 
 #define PKG_NIMBLE_HOST
 #define PKG_NIMBLE_HOST_THREAD_STACK_SIZE 1536
-#define PKG_NIMBLE_HOST_THREAD_PRIORITY 6
+#define PKG_NIMBLE_HOST_THREAD_PRIORITY 8
 
 /* Controller Configuration */
 
@@ -182,8 +182,6 @@
 
 /* peripheral libraries and drivers */
 
-/* sensors drivers */
-
 
 /* miscellaneous packages */
 
@@ -210,8 +208,7 @@
 
 /* Controller configuretion */
 
-#define NIMBLE_CTLR
-#define NIMBLE_BSP_NRF52
-#define NIMBLE_SAMPLE_PER_HR
+#define NIMBLE_SAMPLE_DISABLE
+#define SOC_NRF51822_XXAC
 
 #endif

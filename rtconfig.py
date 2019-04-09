@@ -2,7 +2,7 @@ import os
 
 # toolchains options
 ARCH='arm'
-CPU='cortex-m4'
+CPU='cortex-m0'
 CROSS_TOOL='keil'
 
 if os.getenv('RTT_CC'):
@@ -38,10 +38,10 @@ if PLATFORM == 'gcc':
     OBJDUMP = PREFIX + 'objdump'
     OBJCPY = PREFIX + 'objcopy'
 
-    DEVICE = ' -mcpu=cortex-m4 -mthumb -ffunction-sections -fdata-sections'
-    CFLAGS = DEVICE
-    AFLAGS = ' -c' + DEVICE + ' -x assembler-with-cpp'
-    LFLAGS = DEVICE + ' -Wl,--gc-sections,-Map=rtthread-nrf52832.map,-cref,-u,Reset_Handler -T nrf52_xxaa.ld'
+    DEVICE = ' -mcpu=cortex-m0 -mthumb -ffunction-sections -fdata-sections'
+    CFLAGS = DEVICE + ' -Dgcc'
+    AFLAGS = ' -c' + DEVICE + ' -x assembler-with-cpp -Wa,-mimplicit-it=thumb '
+    LFLAGS = DEVICE + ' -Wl,--gc-sections,-Map=rt-thread.map,-cref,-u,Reset_Handler -T nrf51_xxac.ld'
 
     CPATH = ''
     LPATH = ''
@@ -62,9 +62,9 @@ elif PLATFORM == 'armcc':
     LINK = 'armlink'
     TARGET_EXT = 'axf'
 
-    DEVICE = ' --cpu=cortex-m4.fp'
-    CFLAGS = DEVICE + ' --apcs=interwork'
-    AFLAGS = DEVICE
+    DEVICE = ' --cpu Cortex-M0 '
+    CFLAGS = '-c ' + DEVICE + ' --apcs=interwork --c99'
+    AFLAGS = DEVICE + ' --apcs=interwork '
     LFLAGS = DEVICE + ' --info sizes --info totals --info unused --info veneers --list rtthread-nrf52832.map --scatter rtthread-nrf52832.sct'
 
     CFLAGS += ' --c99 --gnu'

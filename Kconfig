@@ -18,8 +18,13 @@ config $PKGS_DIR
 source "$RTT_DIR/Kconfig"
 source "$PKGS_DIR/Kconfig"
 
+choice
+    prompt "Nordic SOC Support"
+    default SOC_NRF51822_XXAC
 
+    config SOC_NRF51822_XXAC
+        bool "Enable Nrf51822 Support"
 
-
-    
-    
+    config SOC_NRF52832_XXAA
+        bool "Enable Nrf51832 Support"
+endchoice

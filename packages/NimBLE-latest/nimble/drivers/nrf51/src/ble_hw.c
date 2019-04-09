@@ -27,7 +27,7 @@
 #include "nimble/nimble_opt.h"
 #include "nrfx.h"
 #include "controller/ble_hw.h"
-#include "mcu/cmsis_nvic.h"
+// #include "mcu/cmsis_nvic.h"
 
 /* Total number of resolving list elements */
 #define BLE_HW_RESOLV_LIST_SIZE     (16)
@@ -283,14 +283,14 @@ ble_rng_isr(void)
 {
     uint8_t rnum;
 
-    os_trace_isr_enter();
+    // os_trace_isr_enter();
 
     /* No callback? Clear and disable interrupts */
     if (g_ble_rng_isr_cb == NULL) {
         NRF_RNG->INTENCLR = 1;
         NRF_RNG->EVENTS_VALRDY = 0;
         (void)NRF_RNG->SHORTS;
-        os_trace_isr_exit();
+       //  os_trace_isr_exit();
         return;
     }
 
@@ -301,7 +301,7 @@ ble_rng_isr(void)
         (*g_ble_rng_isr_cb)(rnum);
     }
 
-    os_trace_isr_exit();
+    // os_trace_isr_exit();
 }
 
 /**
@@ -325,7 +325,7 @@ ble_hw_rng_init(ble_rng_isr_cb_t cb, int bias)
     /* If we were passed a function pointer we need to enable the interrupt */
     if (cb != NULL) {
         NVIC_SetPriority(RNG_IRQn, (1 << __NVIC_PRIO_BITS) - 1);
-        NVIC_SetVector(RNG_IRQn, (uint32_t)ble_rng_isr);
+        ble_npl_hw_set_isr(RNG_IRQn, ble_rng_isr);
         NVIC_EnableIRQ(RNG_IRQn);
         g_ble_rng_isr_cb = cb;
     }

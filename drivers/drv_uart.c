@@ -32,8 +32,8 @@ UART_CFG_T uart0 =
 {
     .uart = {.p_reg = NRF_UART0, .drv_inst_idx = 0},
 #ifdef RT_USING_CONSOLE
-    .rx_pin = 8,
-    .tx_pin = 6
+    .rx_pin = 11,
+    .tx_pin = 9
 #else
     .rx_pin = 3,
     .tx_pin = 4

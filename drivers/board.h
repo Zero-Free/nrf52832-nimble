@@ -5,7 +5,7 @@
 
 #include "nrf.h"
 
-#define CHIP_SRAM_END       (0x20000000 + 64*1024)
+#define CHIP_SRAM_END       (0x20000000 + 32*1024)
 
 void rt_hw_board_init(void);
 
