@@ -26,15 +26,11 @@
 #endif
 
 #ifndef MYNEWT_VAL_BSP_NRF51
-#define MYNEWT_VAL_BSP_NRF51 (1)
+#define MYNEWT_VAL_BSP_NRF51 (0)
 #endif
 
 #ifndef MYNEWT_VAL_BSP_NRF52
 #define MYNEWT_VAL_BSP_NRF52 (0)
-#endif
-
-#ifndef MYNEWT_VAL_MCU_NRF52832
-#define MYNEWT_VAL_MCU_NRF52832 (0)
 #endif
 
 #ifndef MYNEWT_VAL_MCU_NRF52840

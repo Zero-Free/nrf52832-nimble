@@ -23,13 +23,13 @@
 #include "syscfg/syscfg.h"
 #include "os/os.h"
 #include "ble/xcvr.h"
-// #include "mcu/cmsis_nvic.h"
 #include "nimble/ble.h"
 #include "nimble/nimble_opt.h"
 #include "controller/ble_phy.h"
 #include "controller/ble_phy_trace.h"
 #include "controller/ble_ll.h"
 #include "nrfx.h"
+#include "os/os_trace_api.h"
 
 #if MYNEWT
 #include "mcu/nrf51_clock.h"

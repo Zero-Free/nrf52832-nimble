@@ -10,7 +10,6 @@
       <TargetName>rtthread</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>nRF51822_xxAC</Device>
@@ -953,6 +952,16 @@
               <FilePath>packages\NimBLE-latest\ext\tinycrypt\src\utils.c</FilePath>
             </File>
             <File>
+              <FileName>ble_hw.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\NimBLE-latest\nimble\drivers\nrf51\src\ble_hw.c</FilePath>
+            </File>
+            <File>
+              <FileName>ble_phy.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\NimBLE-latest\nimble\drivers\nrf51\src\ble_phy.c</FilePath>
+            </File>
+            <File>
               <FileName>ble_hci_ram.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\transport\ram\src\ble_hci_ram.c</FilePath>
@@ -1031,16 +1040,6 @@
               <FileName>ble_ll_hci_ev.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\NimBLE-latest\nimble\controller\src\ble_ll_hci_ev.c</FilePath>
-            </File>
-            <File>
-              <FileName>ble_hw.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\NimBLE-latest\nimble\drivers\nrf51\src\ble_hw.c</FilePath>
-            </File>
-            <File>
-              <FileName>ble_phy.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\NimBLE-latest\nimble\drivers\nrf51\src\ble_phy.c</FilePath>
             </File>
             <File>
               <FileName>os_cputime.c</FileName>

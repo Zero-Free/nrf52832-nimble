@@ -148,7 +148,7 @@
 #define PKG_NIMBLE_CTLR
 #define PKG_NIMBLE_CTLR_THREAD_STACK_SIZE 1024
 #define PKG_NIMBLE_CTLR_THREAD_PRIORITY 7
-#define PKG_NIMBLE_BSP_NRF52
+#define PKG_NIMBLE_BSP_NRF51
 
 /* Bluetooth Mesh support */
 
@@ -188,27 +188,6 @@
 
 /* samples: kernel and components samples */
 
-
-/* Privated Packages of RealThread */
-
-
-/* Network Utilities */
-
-#define NIMBT_ROLE_PERIPHERAL
-#define NIMBT_ROLE_BROADCASTER
-
-/* Observer */
-
-
-/* Common configuration */
-
-/* Host stack configuration */
-
-#define NIMBLE_HOST
-
-/* Controller configuretion */
-
-#define NIMBLE_SAMPLE_DISABLE
 #define SOC_NRF51822_XXAC
 
 #endif

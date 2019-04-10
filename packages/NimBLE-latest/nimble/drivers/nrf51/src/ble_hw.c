@@ -27,7 +27,7 @@
 #include "nimble/nimble_opt.h"
 #include "nrfx.h"
 #include "controller/ble_hw.h"
-// #include "mcu/cmsis_nvic.h"
+#include "os/os_trace_api.h"
 
 /* Total number of resolving list elements */
 #define BLE_HW_RESOLV_LIST_SIZE     (16)
@@ -283,14 +283,14 @@ ble_rng_isr(void)
 {
     uint8_t rnum;
 
-    // os_trace_isr_enter();
+    os_trace_isr_enter();
 
     /* No callback? Clear and disable interrupts */
     if (g_ble_rng_isr_cb == NULL) {
         NRF_RNG->INTENCLR = 1;
         NRF_RNG->EVENTS_VALRDY = 0;
         (void)NRF_RNG->SHORTS;
-       //  os_trace_isr_exit();
+        os_trace_isr_exit();
         return;
     }
 
@@ -301,7 +301,7 @@ ble_rng_isr(void)
         (*g_ble_rng_isr_cb)(rnum);
     }
 
-    // os_trace_isr_exit();
+    os_trace_isr_exit();
 }
 
 /**
